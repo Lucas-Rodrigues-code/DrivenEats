@@ -1,67 +1,78 @@
-.topo{
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #EEEEEE;
+}
+
+.top {
     background-color: #CF2B2B;
-    width: 100vw;
+    width: 100%;
     height: 92px;
-    margin:auto;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    
+    color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.topo h1{
+
+.top h1 {
     font-family: 'Righteous', cursive;
     font-size: 44px;
     margin-left: 21px;
     margin-top: 10PX;
-    color:#FFFFFF ;
-    
 }
-.topo h2{
+
+.top h2 {
     font-family: 'Roboto', sans-serif;
-    color:#FFFFFF;
     margin-left: 21px;
     margin-top: 5PX;
 }
 
-.container{
+.container {
     background-color: #eeeeee;
     width: 100vw;
     height: auto;
-    margin:auto;
-    overflow: hidden;
-    
-   
-     
+    margin: auto;
 }
-.titulo h1{
+
+.titulo h1 {
     font-family: 'Righteous';
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
     padding-top: 20px;
-    
-    
-    
-    
     margin-left: 25px;
     color: #333333;
 }
-.menu{
+
+.menu {
     background-color: #eeeeee;
     width: 100vw;
     height: 260px;
     margin-top: 10px;
-    
     display: flex;
-    justify-content: space-between;
-    overflow-x: scroll;
+    overflow-y: scroll;
     gap: 10px;
-    
 }
-/*.menu div:hover {
-    border:3px solid #32B72F;
-    cursor: pointer;
-}*/
-.pratos{
+
+@media (max-width: 401px) {
+    .menu {
+        justify-content: space-between;
+
+    }
+}
+
+@media (min-width: 400px) {
+    .menu {
+        justify-content: space-around;
+
+    }
+}
+
+.pratos {
     background-color: #FFFFFF;
     width: 172px;
     height: 216px;
@@ -70,21 +81,24 @@
     margin-top: 10px;
     margin-left: 5px;
     margin-right: 10px;
-    
-    
+
+
 }
-.pratosselecionados{
-    
+
+.pratosselecionados {
+
     border: 5px solid green;
 
 }
-.prato-img{
+
+.prato-img {
     width: 144px;
     height: 87px;
     margin-top: 18px;
     border-radius: 4px;
 }
-.pratos h1{
+
+.pratos h1 {
     margin-left: 14px;
     margin-top: 2px;
     font-size: 16px;
@@ -93,7 +107,8 @@
     font-weight: 700;
     margin-bottom: 4px;
 }
-.pratos p{
+
+.pratos p {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
@@ -102,7 +117,8 @@
     margin-left: 14px;
     color: #A6A6A6;
 }
-.pratos h2{
+
+.pratos h2 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -112,48 +128,50 @@
     margin-top: 5px;
     color: #000000;
 }
-.check{
-    
+
+.check {
+
     background: #32B72F;
     border-radius: 50%;
-    
-    
+
+
 }
-.hide{
+
+.hide {
     display: none;
     background-color: #32B72F;
 }
-.price-box{
+
+.price-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    padding:5px ;
+
+    padding: 5px;
     width: 160px;
 }
 
-.menu-inferior{
-    width: 100vw;
+.menu-inferior {
+    width: 100%;
     height: 92px;
     background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-   
-    
+
 }
-.caixa-pedido{
+
+.caixa-pedido {
     width: 364px;
     height: 61px;
     border-radius: 50px;
-    background-color: #CBCBCB;;
-     margin-left: 15px;
-    
+    background-color: #CBCBCB;
+
+
 }
+
 .pedido {
-    margin-bottom: 16px;
-    padding-top:10px ;
+    margin-top: 10px;
     font-size: 20px;
     text-align: center;
     font-family: 'Roboto';
@@ -167,9 +185,10 @@
     color: #FFFFFF;
 }
 
-.paragrafovazio{
+.paragrafovazio {
     height: 18px;
 }
-.verde{
+
+.verde {
     background-color: #32B72F;
 }
